@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0a0a0a;
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.app {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  padding: 30px 0;
+  border-bottom: 1px solid #222;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+  color: #9945FF;
+}
+
+header p {
+  color: #888;
+  margin-bottom: 20px;
+}
+
+.payment-page h2 {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.routes {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.route-card {
+  background: #1a1a1a;
+  border: 2px solid #333;
+  border-radius: 12px;
+  padding: 16px 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+.route-card:hover {
+  border-color: #9945FF;
+}
+
+.route-card.selected {
+  border-color: #9945FF;
+  background: #1a0a2e;
+}
+
+.route-card span {
+  color: #14F195;
+  font-weight: bold;
+}
+
+button {
+  width: 100%;
+  padding: 16px;
+  background: #9945FF;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #7a35cc;
+}
+
+button:disabled {
+  background: #444;
+  cursor: not-allowed;
+}
+
+.hint {
+  text-align: center;
+  color: #888;
+  margin: 20px 0;
+}
+
+.status {
+  margin-top: 20px;
+  padding: 16px;
+  background: #1a1a1a;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
