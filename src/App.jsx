@@ -4,7 +4,7 @@ import { WalletAdapterNetwork } from '@solana/wallet-adapter-base'
 import { PhantomWalletAdapter } from '@solana/wallet-adapter-wallets'
 import { WalletModalProvider, WalletMultiButton } from '@solana/wallet-adapter-react-ui'
 import { clusterApiUrl } from '@solana/web3.js'
-import PaymentPage from './PaymentPage'
+import SolanaPaymentChat from './components/SolanaPaymentChat.jsx'
 import '@solana/wallet-adapter-react-ui/styles.css'
 import './App.css'
 
@@ -18,13 +18,8 @@ function App() {
       <WalletProvider wallets={wallets} autoConnect>
         <WalletModalProvider>
           <div className="app">
-            <header>
-              <h1>🛺 SolaTrike</h1>
-              <p>UNIBEN Electric Tricycle Payment</p>
-              <WalletMultiButton />
-            </header>
             <main>
-              <PaymentPage />
+              <SolanaPaymentChat />
             </main>
           </div>
         </WalletModalProvider>
